@@ -90,11 +90,11 @@ class _TagBarState extends State<TagBar> {
                 border: Border.all(
                     width: 1.w, color: Color(0xFFDDDDDD).withOpacity(0.3)),
               ),
-              child: NotificationListener<ScrollEndNotification>(
-                  onNotification: (scrollEnd) {
+              child: NotificationListener<ScrollUpdateNotification>(
+                  onNotification: (scrollUpdate) {
                     setState(() {
-                      _atEnd = scrollEnd.metrics.pixels ==
-                          scrollEnd.metrics.maxScrollExtent;
+                      _atEnd = scrollUpdate.metrics.pixels ==
+                          scrollUpdate.metrics.maxScrollExtent;
                     });
                     return true;
                   },
