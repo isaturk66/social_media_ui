@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:social_media_freelance/models/comment_model.dart';
 import 'package:social_media_freelance/models/profile_model.dart';
 import 'package:social_media_freelance/models/story_model.dart';
 
@@ -139,5 +140,36 @@ class ProfileDummyData {
         "https://rockistasyonu.com/wp-content/uploads/2022/01/nnnnn.jpg"),
     Image.network(
         "https://64.media.tumblr.com/38afe4cbce89ea60396b01c8b9a8ae40/58f3acc7885daa6e-bd/s540x810/2e93e7ad30106ebb6bd084477fdefc9d532a3d40.jpg")
+  ];
+}
+
+class CommentDummyData {
+  CommentDummyData._();
+
+  static final Comment title = Comment(
+    username: "ranatrkylmz",
+    comment:
+        "Nasıl etmeli de ağlayabilmeli farkına bile varmadan?  Nasıl etmeli de ağlayabilmeli ayıpsız, aşikare, yağmur misali?",
+    likes: 6,
+    isOwned: true,
+    image: Image.network(
+        "https://www.all.com.tr/wp-content/uploads/2022/01/RanaTurkyilmaz_2-scaled.jpg"),
+  );
+
+  static final List<Comment> comments = [
+    Comment(
+      username: "farahzeynep",
+      comment: "Güzel bir fotoğraf",
+      likes: 17,
+      image: Image.network(
+          "https://i.pinimg.com/originals/8e/80/93/8e8093b06b28938b609d238ff1052c29.jpg"),
+    ),
+    Comment(
+      username: "frhFzeynep",
+      comment: "AAAAA çok güzelllllllllllllllll",
+      likes: 24,
+      image: Image.network(
+          "https://i1.wp.com/turkischefilme.de/wp-content/uploads/2017/03/farah-zeynep-abdullah.jpg?fit=1457%2C1850&ssl=1"),
+    )
   ];
 }

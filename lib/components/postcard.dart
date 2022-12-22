@@ -361,7 +361,9 @@ class _PostCardState extends State<PostCard> {
                 });
               }
             },
-            onCommentClick: () {},
+            onCommentClick: () {
+              Navigator.of(context).pushNamed("/comments");
+            },
             onGiftClick: () {
               if (_gifted) {
                 setState(() {
